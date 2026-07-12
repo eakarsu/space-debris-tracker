@@ -1,0 +1,30 @@
+{
+  "id": "space-debris-tracker",
+  "title": "Space Debris Tracker App",
+  "industry": "Transportation & Logistics",
+  "industryId": "transportation-logistics",
+  "specialization": "Space Debris Tracker",
+  "sourcePlatformGroup": "transport-logistics-platform",
+  "sources": [
+    "AIAirportAirTrafficOperations",
+    "AIAutoBodyCollisionEstimator",
+    "AISpaceDebrisTracker",
+    "electronics-in-space"
+  ],
+  "featureCount": 242,
+  "candidateFeatureCount": 335,
+  "eliminatedSimilarFeatures": 93,
+  "evidenceCount": 617,
+  "aiPageCount": 0,
+  "sourceAIPageCount": 0,
+  "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
+  "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
+  "database": "database.sqlite",
+  "databaseSeed": {
+    "seededProjects": 2,
+    "seededTables": 20,
+    "seededRows": 306
+  },
+  "visibleFeatureCount": 22,
+  "featureVisibilityMode": "seeded-or-ai"
+}
