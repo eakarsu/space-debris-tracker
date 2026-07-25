@@ -11,20 +11,20 @@
     "AISpaceDebrisTracker",
     "electronics-in-space"
   ],
-  "featureCount": 242,
-  "candidateFeatureCount": 335,
-  "eliminatedSimilarFeatures": 93,
-  "evidenceCount": 617,
-  "aiPageCount": 0,
-  "sourceAIPageCount": 0,
+  "featureCount": 249,
+  "candidateFeatureCount": 364,
+  "eliminatedSimilarFeatures": 115,
+  "evidenceCount": 625,
+  "aiPageCount": 1,
+  "sourceAIPageCount": 1,
   "featureEvidencePolicy": "Existing source routes, pages, APIs, models, schemas, and navigation only",
   "optimizationPolicy": "Equivalent feature names are consolidated once per industry and assigned to one canonical app owner",
   "database": "database.sqlite",
   "databaseSeed": {
-    "seededProjects": 2,
-    "seededTables": 20,
-    "seededRows": 306
+    "seededProjects": 1,
+    "seededTables": 5,
+    "seededRows": 75
   },
-  "visibleFeatureCount": 22,
+  "visibleFeatureCount": 7,
   "featureVisibilityMode": "seeded-or-ai"
 }

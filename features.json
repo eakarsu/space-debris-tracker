@@ -1,31 +1,5 @@
 [
   {
-    "name": "AI Backlog Tools",
-    "canonicalKey": "ai backlog",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/AIBacklogTools"
-    ],
-    "sourceProjects": [
-      "AIAirportAirTrafficOperations"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/space-debris-tracker"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/AIBacklogTools.js",
-        "route": "/AIBacklogTools",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      }
-    ]
-  },
-  {
     "name": "Actions",
     "canonicalKey": "action",
     "aliases": [],
@@ -45,7 +19,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/audit.js:62",
+        "path": "backend/routes/audit.js:3",
         "route": "/actions",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -108,6 +82,32 @@
         "sourceProject": "electronics-in-space",
         "path": "backend/routes/upscreen-lots.js:158",
         "route": "/:id/advance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "AI Backlog Tools",
+    "canonicalKey": "ai backlog",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/AIBacklogTools"
+    ],
+    "sourceProjects": [
+      "AIAirportAirTrafficOperations"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/AIBacklogTools.js",
+        "route": "/AIBacklogTools",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -326,6 +326,32 @@
     ]
   },
   {
+    "name": "Approval Request",
+    "canonicalKey": "approval request",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/lots/:id/approval-request"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:36",
+        "route": "/lots/:id/approval-request",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Atc Views",
     "canonicalKey": "atc",
     "aliases": [],
@@ -374,7 +400,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:80",
+        "path": "frontend/src/App.tsx:91",
         "route": "audit",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -388,7 +414,7 @@
       {
         "kind": "page",
         "sourceProject": "hardware-supply-chain",
-        "path": "frontend/src/App.tsx:74",
+        "path": "frontend/src/App.tsx:46",
         "route": "audit",
         "originApp": "transportation-logistics/supply-chain-tracker"
       }
@@ -486,7 +512,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:37",
+        "path": "frontend/src/pages/Dashboard.js:36",
         "route": "/baggage",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -662,6 +688,27 @@
     ],
     "evidence": [
       {
+        "kind": "page",
+        "sourceProject": "AIAnalyzetelematics",
+        "path": "frontend/src/App.js:68",
+        "route": "/analytics/carbon",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAnalyzetelematics",
+        "path": "frontend/src/components/Layout.js:22",
+        "route": "/analytics/carbon",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAnalyzetelematics",
+        "path": "frontend/src/pages/Dashboard.js:25",
+        "route": "/analytics/carbon",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
         "path": "backend/src/routes/stats.js:182",
@@ -688,27 +735,6 @@
         "path": "frontend/src/components/Navbar.js:25",
         "route": "/statistics/carbon",
         "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAnalyzetelematics",
-        "path": "frontend/src/App.js:68",
-        "route": "/analytics/carbon",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAnalyzetelematics",
-        "path": "frontend/src/components/Layout.js:22",
-        "route": "/analytics/carbon",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAnalyzetelematics",
-        "path": "frontend/src/pages/Dashboard.js:25",
-        "route": "/analytics/carbon",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
       }
     ]
   },
@@ -740,7 +766,7 @@
   },
   {
     "name": "Cf Active Debris Removal Logistics With Payload Capacity",
-    "canonicalKey": "active capacity cf debris logistics payload removal with",
+    "canonicalKey": "active capacity cf debris logistic payload removal with",
     "aliases": [],
     "kinds": [
       "page"
@@ -766,7 +792,7 @@
   },
   {
     "name": "Cf Active Debris Removal Logistics With Payload Capacity Cost",
-    "canonicalKey": "active capacity cf cost debris logistics payload removal with",
+    "canonicalKey": "active capacity cf cost debris logistic payload removal with",
     "aliases": [],
     "kinds": [
       "page"
@@ -784,7 +810,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:158",
+        "path": "frontend/src/App.jsx:157",
         "route": "/cf-active-debris-removal-logistics-with-payload-capacity-cost",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -811,7 +837,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:98",
+        "path": "frontend/src/App.tsx:113",
         "route": "cf-chip-digital-twin",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -845,7 +871,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:99",
+        "path": "frontend/src/App.tsx:114",
         "route": "cf-itar-collaboration",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -879,7 +905,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:101",
+        "path": "frontend/src/App.tsx:116",
         "route": "cf-mission-derating",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -913,7 +939,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:157",
+        "path": "frontend/src/App.jsx:156",
         "route": "/cf-multi-mission-optimizer-recommending-constellation-reconfigurations",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -972,7 +998,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:155",
+        "path": "frontend/src/App.jsx:154",
         "route": "/cf-predictive-collision-clustering-by-likely-fragmentation-parent-with",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -999,7 +1025,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:102",
+        "path": "frontend/src/App.tsx:117",
         "route": "cf-rad-hard-marketplace",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1033,7 +1059,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:100",
+        "path": "frontend/src/App.tsx:115",
         "route": "cf-rad-test-plan-gen",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1048,7 +1074,7 @@
   },
   {
     "name": "Cf Real Time Conjunction Alerting Via Webhooks And",
-    "canonicalKey": "alerting and cf conjunction real time via webhooks",
+    "canonicalKey": "alerting and cf conjunction real time via webhook",
     "aliases": [],
     "kinds": [
       "page"
@@ -1074,7 +1100,7 @@
   },
   {
     "name": "Cf Real Time Conjunction Alerting Via Webhooks And Pager Style Escalation",
-    "canonicalKey": "alerting and cf conjunction escalation pager real style time via webhooks",
+    "canonicalKey": "alerting and cf conjunction escalation pager real style time via webhook",
     "aliases": [],
     "kinds": [
       "page"
@@ -1092,7 +1118,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:160",
+        "path": "frontend/src/App.jsx:159",
         "route": "/cf-real-time-conjunction-alerting-via-webhooks-and-pager-style-escalation",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -1119,7 +1145,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:159",
+        "path": "frontend/src/App.jsx:158",
         "route": "/cf-regulatory-compliance-scoring-against-national-international-guidelines",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1134,7 +1160,7 @@
   },
   {
     "name": "Cf Sensor Fusion Combining Optical Radar Observations Via",
-    "canonicalKey": "cf combining fusion observations optical radar sensor via",
+    "canonicalKey": "cf combining fusion observation optical radar sensor via",
     "aliases": [],
     "kinds": [
       "page"
@@ -1160,7 +1186,7 @@
   },
   {
     "name": "Cf Sensor Fusion Combining Optical Radar Observations Via ML",
-    "canonicalKey": "cf combining fusion ml observations optical radar sensor via",
+    "canonicalKey": "cf combining fusion ml observation optical radar sensor via",
     "aliases": [],
     "kinds": [
       "page"
@@ -1178,8 +1204,34 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:156",
+        "path": "frontend/src/App.jsx:155",
         "route": "/cf-sensor-fusion-combining-optical-radar-observations-via-ml",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Change Orders",
+    "canonicalKey": "change order",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/parts/:partId/change-orders"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:41",
+        "route": "/parts/:partId/change-orders",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -1204,17 +1256,17 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:46",
+        "path": "backend/routes/ai.js:62",
         "route": "/chip-recommendation",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
   },
   {
-    "name": "Chips",
+    "name": "Chips Page",
     "canonicalKey": "chip",
     "aliases": [
-      "Chips Page"
+      "Chips"
     ],
     "kinds": [
       "page"
@@ -1233,7 +1285,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:65",
+        "path": "frontend/src/App.tsx:76",
         "route": "chips",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1271,21 +1323,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:479",
+        "path": "backend/src/routes/ai.js:480",
         "route": "/collision-clustering",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:151",
+        "path": "frontend/src/App.jsx:150",
         "route": "/ai/collision-clustering",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:79",
+        "path": "frontend/src/App.jsx:78",
         "route": "/ai/collision-clustering",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1323,21 +1375,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:72",
+        "path": "backend/src/routes/ai.js:73",
         "route": "/collision-probability",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:142",
+        "path": "frontend/src/App.jsx:141",
         "route": "/ai/collision-probability",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:70",
+        "path": "frontend/src/App.jsx:69",
         "route": "/ai/collision-probability",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1380,14 +1432,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:148",
+        "path": "frontend/src/App.jsx:147",
         "route": "/conjunction-alerts",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:77",
+        "path": "frontend/src/App.jsx:76",
         "route": "/conjunction-alerts",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1423,14 +1475,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:139",
+        "path": "frontend/src/App.jsx:138",
         "route": "/conjunction-events",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:66",
+        "path": "frontend/src/App.jsx:65",
         "route": "/conjunction-events",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -1452,7 +1504,7 @@
   },
   {
     "name": "Conjunctions Timeline",
-    "canonicalKey": "conjunctions timeline",
+    "canonicalKey": "conjunction timeline",
     "aliases": [],
     "kinds": [
       "api"
@@ -1553,7 +1605,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:45",
+        "path": "frontend/src/pages/Dashboard.js:44",
         "route": "/ai/connections",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -1859,7 +1911,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/upscreen-lots.js:195",
+        "path": "backend/routes/upscreen-lots.js:165",
         "route": "/:id/cumulative-yield",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -1893,9 +1945,8 @@
   },
   {
     "name": "Custom Views",
-    "canonicalKey": "custom view",
+    "canonicalKey": "custom",
     "aliases": [
-      "Custom Views Page",
       "Customs"
     ],
     "kinds": [
@@ -1903,7 +1954,6 @@
       "page"
     ],
     "routes": [
-      "/CustomViewsPage",
       "/custom-views",
       "/customs",
       "custom-views"
@@ -1943,34 +1993,6 @@
     "evidence": [
       {
         "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/App.js:128",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/App.js:90",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/App.js:92",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:29",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
         "sourceProject": "AIAutonomousDroneOperations",
         "path": "frontend/src/App.js:64",
         "route": "/custom-views",
@@ -1998,60 +2020,32 @@
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
-        "kind": "navigation",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/components/Navbar.js:51",
-        "route": "",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
         "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/App.js:110",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/App.js:128",
         "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/components/Navbar.js:51",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/App.js:90",
         "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:151",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/App.js:92",
         "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:51",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/components/Sidebar.js:29",
         "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:170",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:84",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:76",
-        "route": "custom-views",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
@@ -2104,6 +2098,118 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/App.jsx:69",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/components/Layout.jsx:28",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "movingCompany",
+        "path": "frontend/src/components/Layout.jsx:18",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/App.jsx:50",
+        "route": "/customs",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/components/Layout.jsx:9",
+        "route": "/customs",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/pages/Dashboard.jsx:35",
+        "route": "/customs",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/components/Navbar.js:51",
+        "route": "",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/App.js:110",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/components/Navbar.js:51",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:151",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:51",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/App.jsx:169",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/App.jsx:83",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/App.tsx:87",
+        "route": "custom-views",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainReshoringAdvisor",
+        "path": "frontend/src/App.js:237",
+        "route": "/custom-views",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "hardware-supply-chain",
+        "path": "frontend/src/App.tsx:55",
+        "route": "custom-views",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIAerospaceMRO",
         "path": "frontend/src/App.js:101",
         "route": "/custom-views",
@@ -2143,69 +2249,71 @@
         "path": "frontend/src/components/Layout.jsx:62",
         "route": "/custom-views",
         "originApp": "transportation-logistics/warehouse-manager"
+      }
+    ]
+  },
+  {
+    "name": "Custom Views Page",
+    "canonicalKey": "custom view",
+    "aliases": [],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/CustomViewsPage"
+    ],
+    "sourceProjects": [
+      "AIAerospaceMRO",
+      "AIAirportAirTrafficOperations",
+      "AIAnalyzetelematics",
+      "AIAutoBodyCollisionEstimator",
+      "AIAutomateroutingmedical",
+      "AIAutonomousDroneOperations",
+      "AIAutonomousVehicleSimulator",
+      "AIDroneDeliveryLastMile",
+      "AIFleetElectrificationPlanner",
+      "AIInventoryDroneOps",
+      "AILast-MileDeliveryOptimizer",
+      "AIMaritimeShippingPortLogistics",
+      "AISatelliteImageryAnalyzer",
+      "AISpaceDebrisTracker",
+      "AISpaceportOps",
+      "AISupplyChainReshoringAdvisor",
+      "AIWarehouseManager",
+      "electronics-in-space",
+      "hardware-supply-chain",
+      "movingCompany"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/autonomous-vehicle-simulator",
+      "transportation-logistics/drone-delivery-last-mile",
+      "transportation-logistics/fleet-maintenance-scheduler",
+      "transportation-logistics/maritime-shipping-port-logistics",
+      "transportation-logistics/space-debris-tracker",
+      "transportation-logistics/supply-chain-tracker",
+      "transportation-logistics/warehouse-manager"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "AIAutonomousDroneOperations",
+        "path": "frontend/src/pages/CustomViewsPage.js",
+        "route": "/CustomViewsPage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "page",
-        "sourceProject": "AISupplyChainReshoringAdvisor",
-        "path": "frontend/src/App.js:237",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/supply-chain-tracker"
+        "sourceProject": "AIAutonomousVehicleSimulator",
+        "path": "frontend/src/pages/CustomViewsPage.js",
+        "route": "/CustomViewsPage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "page",
-        "sourceProject": "hardware-supply-chain",
-        "path": "frontend/src/App.tsx:84",
-        "route": "custom-views",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/App.jsx:69",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/components/Layout.jsx:28",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/App.jsx:83",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/components/Layout.jsx:18",
-        "route": "/custom-views",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/App.jsx:50",
-        "route": "/customs",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/components/Layout.jsx:9",
-        "route": "/customs",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/pages/Dashboard.jsx:35",
-        "route": "/customs",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+        "sourceProject": "AISpaceportOps",
+        "path": "frontend/src/pages/CustomViewsPage.js",
+        "route": "/CustomViewsPage",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
         "kind": "page",
@@ -2230,24 +2338,38 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutonomousDroneOperations",
+        "sourceProject": "AIAnalyzetelematics",
         "path": "frontend/src/pages/CustomViewsPage.js",
         "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutonomousVehicleSimulator",
-        "path": "frontend/src/pages/CustomViewsPage.js",
+        "sourceProject": "AIAutomateroutingmedical",
+        "path": "frontend/src/pages/CustomViewsPage.jsx",
         "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceportOps",
+        "sourceProject": "AIFleetElectrificationPlanner",
         "path": "frontend/src/pages/CustomViewsPage.js",
         "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/pages/CustomViewsPage.jsx",
+        "route": "/CustomViewsPage",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "movingCompany",
+        "path": "frontend/src/pages/CustomViewsPage.jsx",
+        "route": "/CustomViewsPage",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       },
       {
         "kind": "page",
@@ -2279,24 +2401,17 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIAnalyzetelematics",
+        "sourceProject": "AISupplyChainReshoringAdvisor",
         "path": "frontend/src/pages/CustomViewsPage.js",
         "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+        "originApp": "transportation-logistics/supply-chain-tracker"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutomateroutingmedical",
-        "path": "frontend/src/pages/CustomViewsPage.jsx",
+        "sourceProject": "hardware-supply-chain",
+        "path": "frontend/src/pages/CustomViewsPage.tsx",
         "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIFleetElectrificationPlanner",
-        "path": "frontend/src/pages/CustomViewsPage.js",
-        "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+        "originApp": "transportation-logistics/supply-chain-tracker"
       },
       {
         "kind": "page",
@@ -2325,34 +2440,6 @@
         "path": "frontend/src/pages/CustomViewsPage.jsx",
         "route": "/CustomViewsPage",
         "originApp": "transportation-logistics/warehouse-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainReshoringAdvisor",
-        "path": "frontend/src/pages/CustomViewsPage.js",
-        "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hardware-supply-chain",
-        "path": "frontend/src/pages/CustomViewsPage.tsx",
-        "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/pages/CustomViewsPage.jsx",
-        "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/pages/CustomViewsPage.jsx",
-        "route": "/CustomViewsPage",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       }
     ]
   },
@@ -2517,48 +2604,6 @@
     ],
     "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/pages/Dashboard.js",
-        "route": "/Dashboard",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/pages/Dashboard.js",
-        "route": "/Dashboard",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "navigation",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:11",
-        "route": "",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/App.js:74",
-        "route": "/dashboard",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/components/Sidebar.js:11",
-        "route": "/dashboard",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/pages/DashboardPage.js",
-        "route": "/DashboardPage",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
         "kind": "navigation",
         "sourceProject": "AIAutonomousDroneOperations",
         "path": "frontend/src/components/Sidebar.js:6",
@@ -2601,74 +2646,46 @@
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
-        "kind": "navigation",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/components/Navbar.js:8",
-        "route": "",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
         "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
+        "sourceProject": "AIDroneDeliveryLastMile",
         "path": "frontend/src/pages/Dashboard.js",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:135",
-        "route": "/dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:35",
-        "route": "/dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/pages/Dashboard.jsx",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/pages/Dashboard.js",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/components/Sidebar.js:11",
+        "route": "",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:136",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/App.js:74",
         "route": "/dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:62",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/components/Sidebar.js:11",
         "route": "/dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/pages/Dashboard.jsx",
-        "route": "/Dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:64",
-        "route": "dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/pages/Dashboard.tsx",
-        "route": "/Dashboard",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/pages/DashboardPage.js",
+        "route": "/DashboardPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
@@ -2714,38 +2731,87 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIAerospaceMRO",
-        "path": "frontend/src/pages/Dashboard.js",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/pages/Dashboard.jsx",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/warehouse-manager"
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "movingCompany",
+        "path": "frontend/src/pages/Dashboard.jsx",
+        "route": "/Dashboard",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       },
       {
         "kind": "navigation",
-        "sourceProject": "AIFreightPricingAgent",
-        "path": "client/src/components/Sidebar.jsx:5",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/components/Navbar.js:8",
         "route": "",
-        "originApp": "transportation-logistics/warehouse-manager"
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
-        "sourceProject": "AIFreightPricingAgent",
-        "path": "client/src/pages/Dashboard.jsx",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/Dashboard.js",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/warehouse-manager"
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
-        "sourceProject": "AIWarehouseManager",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:135",
+        "route": "/dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:35",
+        "route": "/dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
         "path": "frontend/src/pages/Dashboard.jsx",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/warehouse-manager"
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
-        "sourceProject": "AISatelliteImageryAnalyzer",
-        "path": "frontend/src/pages/DashboardPage.jsx",
-        "route": "/DashboardPage",
-        "originApp": "transportation-logistics/warehouse-manager"
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/App.jsx:135",
+        "route": "/dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/App.jsx:61",
+        "route": "/dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/pages/Dashboard.jsx",
+        "route": "/Dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/App.tsx:75",
+        "route": "dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/pages/Dashboard.tsx",
+        "route": "/Dashboard",
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
@@ -2785,7 +2851,7 @@
       {
         "kind": "page",
         "sourceProject": "hardware-supply-chain",
-        "path": "frontend/src/App.tsx:65",
+        "path": "frontend/src/App.tsx:38",
         "route": "dashboard",
         "originApp": "transportation-logistics/supply-chain-tracker"
       },
@@ -2798,17 +2864,38 @@
       },
       {
         "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/pages/Dashboard.jsx",
+        "sourceProject": "AIAerospaceMRO",
+        "path": "frontend/src/pages/Dashboard.js",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+        "originApp": "transportation-logistics/warehouse-manager"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIFreightPricingAgent",
+        "path": "client/src/components/Sidebar.jsx:5",
+        "route": "",
+        "originApp": "transportation-logistics/warehouse-manager"
       },
       {
         "kind": "page",
-        "sourceProject": "movingCompany",
+        "sourceProject": "AIFreightPricingAgent",
+        "path": "client/src/pages/Dashboard.jsx",
+        "route": "/Dashboard",
+        "originApp": "transportation-logistics/warehouse-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIWarehouseManager",
         "path": "frontend/src/pages/Dashboard.jsx",
         "route": "/Dashboard",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+        "originApp": "transportation-logistics/warehouse-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISatelliteImageryAnalyzer",
+        "path": "frontend/src/pages/DashboardPage.jsx",
+        "route": "/DashboardPage",
+        "originApp": "transportation-logistics/warehouse-manager"
       }
     ]
   },
@@ -2837,21 +2924,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:223",
+        "path": "backend/src/routes/ai.js:224",
         "route": "/debris-analysis",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:145",
+        "path": "frontend/src/App.jsx:144",
         "route": "/ai/debris-analysis",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:73",
+        "path": "frontend/src/App.jsx:72",
         "route": "/ai/debris-analysis",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -2896,21 +2983,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:443",
+        "path": "backend/src/routes/ai.js:444",
         "route": "/debris-characterize",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:150",
+        "path": "frontend/src/App.jsx:149",
         "route": "/ai/debris-characterize",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:78",
+        "path": "frontend/src/App.jsx:77",
         "route": "/ai/debris-characterize",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -2946,14 +3033,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:141",
+        "path": "frontend/src/App.jsx:140",
         "route": "/debris-removal",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:68",
+        "path": "frontend/src/App.jsx:67",
         "route": "/debris-removal",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -2969,6 +3056,40 @@
         "sourceProject": "AISpaceDebrisTracker",
         "path": "frontend/src/pages/DebrisRemovalPage.jsx",
         "route": "/DebrisRemovalPage",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Decide",
+    "canonicalKey": "decide",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/change-orders/:id/decide",
+      "/lots/:id/approvals/:approvalId/decide"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:37",
+        "route": "/lots/:id/approvals/:approvalId/decide",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:42",
+        "route": "/change-orders/:id/decide",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -3075,17 +3196,17 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:36",
+        "path": "frontend/src/pages/Dashboard.js:35",
         "route": "/delays",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
   },
   {
-    "name": "Deployments",
+    "name": "Deployments Page",
     "canonicalKey": "deployment",
     "aliases": [
-      "Deployments Page"
+      "Deployments"
     ],
     "kinds": [
       "page"
@@ -3104,7 +3225,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:67",
+        "path": "frontend/src/App.tsx:78",
         "route": "deployments",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -3289,7 +3410,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:53",
+        "path": "frontend/src/pages/Dashboard.js:52",
         "route": "/ai/emergency-response",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -3390,27 +3511,36 @@
     ]
   },
   {
-    "name": "Exports Page",
-    "canonicalKey": "exports",
+    "name": "External Capabilities",
+    "canonicalKey": "capability external",
     "aliases": [],
     "kinds": [
-      "page"
+      "api"
     ],
     "routes": [
-      "/ExportsPage"
+      "/external-capabilities"
     ],
     "sourceProjects": [
-      "electronics-in-space"
+      "AIAutoBodyCollisionEstimator",
+      "AIAutomateroutingmedical"
     ],
     "consolidatedFromApps": [
+      "transportation-logistics/fleet-maintenance-scheduler",
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
       {
-        "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/pages/ExportsPage.tsx",
-        "route": "/ExportsPage",
+        "kind": "api",
+        "sourceProject": "AIAutomateroutingmedical",
+        "path": "backend/routes/dispatchCases.js:2",
+        "route": "/external-capabilities",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "backend/routes/governedEstimates.js:7",
+        "route": "/external-capabilities",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -3470,7 +3600,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:60",
+        "path": "backend/routes/ai.js:76",
         "route": "/failure-risk",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -3531,12 +3661,15 @@
   {
     "name": "Flights",
     "canonicalKey": "flight",
-    "aliases": [],
+    "aliases": [
+      "Flights Page"
+    ],
     "kinds": [
       "navigation",
       "page"
     ],
     "routes": [
+      "/FlightsPage",
       "/flights"
     ],
     "sourceProjects": [
@@ -3570,6 +3703,13 @@
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/pages/FlightsPage.js",
+        "route": "/FlightsPage",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
         "kind": "navigation",
         "sourceProject": "AIAirportAirTrafficOperations",
         "path": "frontend/src/components/Navbar.js:9",
@@ -3593,7 +3733,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:39",
+        "path": "frontend/src/pages/Dashboard.js:38",
         "route": "/flights",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -3653,7 +3793,7 @@
   },
   {
     "name": "Gap AI Parts Substitution Recommendation",
-    "canonicalKey": "ai gap parts recommendation substitution",
+    "canonicalKey": "ai gap part recommendation substitution",
     "aliases": [],
     "kinds": [
       "page"
@@ -3828,7 +3968,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:94",
+        "path": "frontend/src/App.tsx:109",
         "route": "gap-chamber-scheduling",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -3940,7 +4080,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:87",
+        "path": "frontend/src/App.tsx:102",
         "route": "gap-derating-advisor",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4000,7 +4140,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:91",
+        "path": "frontend/src/App.tsx:106",
         "route": "gap-eda-cad-upload",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4138,7 +4278,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:93",
+        "path": "frontend/src/App.tsx:108",
         "route": "gap-itar-flags",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4198,7 +4338,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:85",
+        "path": "frontend/src/App.tsx:100",
         "route": "gap-mass-budget-optimizer",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4213,7 +4353,7 @@
   },
   {
     "name": "Gap No 3D Visualization Of Debris Clouds At The",
-    "canonicalKey": "3d at clouds debris gap no of the visualization",
+    "canonicalKey": "3d at cloud debris gap no of the visualization",
     "aliases": [],
     "kinds": [
       "page"
@@ -4231,7 +4371,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:166",
+        "path": "frontend/src/App.jsx:165",
         "route": "/gap-no-3d-visualization-of-debris-clouds-at-the",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -4265,7 +4405,7 @@
   },
   {
     "name": "Gap No AI Driven Debris Characterization From Limited Observations Frontend",
-    "canonicalKey": "ai characterization debris driven from frontend gap limited no observations",
+    "canonicalKey": "ai characterization debris driven from frontend gap limited no observation",
     "aliases": [],
     "kinds": [
       "page"
@@ -4283,7 +4423,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:161",
+        "path": "frontend/src/App.jsx:160",
         "route": "/gap-no-ai-driven-debris-characterization-from-limited-observations-frontend",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -4326,7 +4466,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:168",
+        "path": "frontend/src/App.jsx:167",
         "route": "/gap-no-audit-logging",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4341,7 +4481,7 @@
   },
   {
     "name": "Gap No Integration With Norad Tle Feeds Or",
-    "canonicalKey": "feeds gap integration no norad or tle with",
+    "canonicalKey": "feed gap integration no norad or tle with",
     "aliases": [],
     "kinds": [
       "page"
@@ -4367,7 +4507,7 @@
   },
   {
     "name": "Gap No Integration With Norad Tle Feeds Or Jspoc",
-    "canonicalKey": "feeds gap integration jspoc no norad or tle with",
+    "canonicalKey": "feed gap integration jspoc no norad or tle with",
     "aliases": [],
     "kinds": [
       "page"
@@ -4385,7 +4525,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:165",
+        "path": "frontend/src/App.jsx:164",
         "route": "/gap-no-integration-with-norad-tle-feeds-or-jspoc",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -4412,7 +4552,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:162",
+        "path": "frontend/src/App.jsx:161",
         "route": "/gap-no-multi-target-rendezvous-optimization-endpoint",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4446,7 +4586,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:169",
+        "path": "frontend/src/App.jsx:168",
         "route": "/gap-no-multi-tenant-operator-support",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4505,7 +4645,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:167",
+        "path": "frontend/src/App.jsx:166",
         "route": "/gap-no-regulatory-compliance-tracking-backend-outer-space-treaty",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -4532,7 +4672,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:163",
+        "path": "frontend/src/App.jsx:162",
         "route": "/gap-no-sensor-fusion-ml-for-observation-confidence",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4547,7 +4687,7 @@
   },
   {
     "name": "Gap No Webhooks Or Push Notifications For Real",
-    "canonicalKey": "for gap no notifications or push real webhooks",
+    "canonicalKey": "for gap no notification or push real webhook",
     "aliases": [],
     "kinds": [
       "page"
@@ -4573,7 +4713,7 @@
   },
   {
     "name": "Gap No Webhooks Or Push Notifications For Real Time Conjunction",
-    "canonicalKey": "conjunction for gap no notifications or push real time webhooks",
+    "canonicalKey": "conjunction for gap no notification or push real time webhook",
     "aliases": [],
     "kinds": [
       "page"
@@ -4591,7 +4731,7 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:164",
+        "path": "frontend/src/App.jsx:163",
         "route": "/gap-no-webhooks-or-push-notifications-for-real-time-conjunction",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -4599,7 +4739,7 @@
   },
   {
     "name": "Gap No3D Visualization Of Debris Clouds At",
-    "canonicalKey": "at clouds debris gap no3d of visualization",
+    "canonicalKey": "at cloud debris gap no3d of visualization",
     "aliases": [],
     "kinds": [
       "page"
@@ -4696,7 +4836,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:95",
+        "path": "frontend/src/App.tsx:110",
         "route": "gap-orbit-telemetry-ingest",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4711,7 +4851,7 @@
   },
   {
     "name": "Gap Outbound Webhooks Airline Catering Systems",
-    "canonicalKey": "airline catering gap outbound webhooks",
+    "canonicalKey": "airline catering gap outbound webhook",
     "aliases": [],
     "kinds": [
       "page"
@@ -4815,7 +4955,7 @@
   },
   {
     "name": "Gap Real Time Parts Availability Supplier",
-    "canonicalKey": "availability gap parts real supplier time",
+    "canonicalKey": "availability gap part real supplier time",
     "aliases": [],
     "kinds": [
       "page"
@@ -4841,7 +4981,7 @@
   },
   {
     "name": "Gap Real Time Parts Pricing Autozone",
-    "canonicalKey": "autozone gap parts pricing real time",
+    "canonicalKey": "autozone gap part pricing real time",
     "aliases": [],
     "kinds": [
       "page"
@@ -4893,7 +5033,7 @@
   },
   {
     "name": "Gap Recycled Parts Marketplace Connecting Salvage",
-    "canonicalKey": "connecting gap marketplace parts recycled salvage",
+    "canonicalKey": "connecting gap marketplace part recycled salvage",
     "aliases": [],
     "kinds": [
       "page"
@@ -4938,7 +5078,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:86",
+        "path": "frontend/src/App.tsx:101",
         "route": "gap-single-event-upset",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -4972,7 +5112,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:88",
+        "path": "frontend/src/App.tsx:103",
         "route": "gap-test-coverage-gap",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5006,7 +5146,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:84",
+        "path": "frontend/src/App.tsx:99",
         "route": "gap-thermal-envelope-solver",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5040,7 +5180,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:92",
+        "path": "frontend/src/App.tsx:107",
         "route": "gap-tier2-suppliers",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5131,7 +5271,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:44",
+        "path": "frontend/src/pages/Dashboard.js:43",
         "route": "/ai/gate-conflicts",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5186,7 +5326,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:34",
+        "path": "frontend/src/pages/Dashboard.js:33",
         "route": "/gates",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -5369,56 +5509,6 @@
     ]
   },
   {
-    "name": "Integrations",
-    "canonicalKey": "integration",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/Integrations",
-      "/integrations"
-    ],
-    "sourceProjects": [
-      "AIAutoBodyCollisionEstimator",
-      "AIAutomateroutingmedical"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/fleet-maintenance-scheduler",
-      "transportation-logistics/space-debris-tracker"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:153",
-        "route": "/integrations",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/pages/Integrations.jsx",
-        "route": "/Integrations",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutomateroutingmedical",
-        "path": "frontend/src/App.jsx:89",
-        "route": "/integrations",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutomateroutingmedical",
-        "path": "frontend/src/pages/Integrations.jsx",
-        "route": "/Integrations",
-        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
-      }
-    ]
-  },
-  {
     "name": "Key",
     "canonicalKey": "key",
     "aliases": [],
@@ -5469,21 +5559,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:274",
+        "path": "backend/src/routes/ai.js:275",
         "route": "/launch-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:146",
+        "path": "frontend/src/App.jsx:145",
         "route": "/ai/launch-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:74",
+        "path": "frontend/src/App.jsx:73",
         "route": "/ai/launch-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5499,41 +5589,6 @@
         "sourceProject": "AISpaceDebrisTracker",
         "path": "frontend/src/pages/LaunchOptimizationPage.jsx",
         "route": "/LaunchOptimizationPage",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      }
-    ]
-  },
-  {
-    "name": "Launch Windows Page",
-    "canonicalKey": "launch windows",
-    "aliases": [],
-    "kinds": [
-      "page"
-    ],
-    "routes": [
-      "/LaunchWindowsPage"
-    ],
-    "sourceProjects": [
-      "AISpaceDebrisTracker",
-      "AISpaceportOps"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/autonomous-vehicle-simulator",
-      "transportation-logistics/space-debris-tracker"
-    ],
-    "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceportOps",
-        "path": "frontend/src/pages/LaunchWindowsPage.js",
-        "route": "/LaunchWindowsPage",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/pages/LaunchWindowsPage.jsx",
-        "route": "/LaunchWindowsPage",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -5565,6 +5620,75 @@
     ]
   },
   {
+    "name": "Lookup Parts",
+    "canonicalKey": "lookup part",
+    "aliases": [
+      "Parts Lookup"
+    ],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/lookup-parts",
+      "/parts-lookup"
+    ],
+    "sourceProjects": [
+      "AIAutoBodyCollisionEstimator"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "backend/routes/ai.js:393",
+        "route": "/lookup-parts",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "backend/routes/ai.js:104",
+        "route": "/parts-lookup",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Lots",
+    "canonicalKey": "lots",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/lots"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:28",
+        "route": "/lots",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:30",
+        "route": "/lots",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Maneuver Planning",
     "canonicalKey": "maneuver planning",
     "aliases": [
@@ -5589,21 +5713,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:175",
+        "path": "backend/src/routes/ai.js:176",
         "route": "/maneuver-planning",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:144",
+        "path": "frontend/src/App.jsx:143",
         "route": "/ai/maneuver-planning",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:72",
+        "path": "frontend/src/App.jsx:71",
         "route": "/ai/maneuver-planning",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5695,7 +5819,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:67",
+        "path": "backend/routes/ai.js:83",
         "route": "/mission-analysis",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -5747,7 +5871,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:104",
+        "path": "backend/routes/ai.js:120",
         "route": "/mission-success",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -5808,7 +5932,7 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:584",
+        "path": "backend/src/routes/ai.js:585",
         "route": "/multi-target-rendezvous",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -5927,7 +6051,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:48",
+        "path": "frontend/src/pages/Dashboard.js:47",
         "route": "/ai/notam-briefing",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -5949,7 +6073,8 @@
       "page"
     ],
     "routes": [
-      "/codex/operations"
+      "/codex/operations",
+      "codex/operations"
     ],
     "sourceProjects": [
       "AIAerospaceMRO",
@@ -5974,9 +6099,7 @@
       "AISupplyChainTracker",
       "AIVehicleInspectionCertification",
       "AIWarehouseManager",
-      "electronics-in-space",
-      "hardware-supply-chain",
-      "movingCompany"
+      "electronics-in-space"
     ],
     "consolidatedFromApps": [
       "transportation-logistics/autonomous-vehicle-simulator",
@@ -5988,27 +6111,6 @@
       "transportation-logistics/warehouse-manager"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIDroneDeliveryLastMile",
-        "path": "frontend/src/App.js:86",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIInventoryDroneOps",
-        "path": "frontend/src/App.js:66",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AILast-MileDeliveryOptimizer",
-        "path": "frontend/src/App.js:72",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/drone-delivery-last-mile"
-      },
       {
         "kind": "page",
         "sourceProject": "AIAutonomousDroneOperations",
@@ -6038,39 +6140,25 @@
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
-        "kind": "navigation",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/components/Navbar.js:6",
-        "route": "",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "kind": "page",
+        "sourceProject": "AIDroneDeliveryLastMile",
+        "path": "frontend/src/App.js:86",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/App.js:79",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "frontend/src/App.js:66",
         "route": "/codex/operations",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:133",
+        "sourceProject": "AILast-MileDeliveryOptimizer",
+        "path": "frontend/src/App.js:72",
         "route": "/codex/operations",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:133",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:59",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/space-debris-tracker"
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
         "kind": "page",
@@ -6102,6 +6190,69 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIMaritimeShippingPortLogistics",
+        "path": "frontend/src/App.jsx:44",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "navigation",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/components/Navbar.js:6",
+        "route": "",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/App.js:79",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:133",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISpaceDebrisTracker",
+        "path": "frontend/src/App.jsx:132",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/App.tsx:96",
+        "route": "codex/operations",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIParkingManagementPlatform",
+        "path": "client/src/App.js:85",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainReshoringAdvisor",
+        "path": "frontend/src/App.js:220",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISupplyChainTracker",
+        "path": "client/src/App.js:97",
+        "route": "/codex/operations",
+        "originApp": "transportation-logistics/supply-chain-tracker"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AIAerospaceMRO",
         "path": "frontend/src/App.js:70",
         "route": "/codex/operations",
@@ -6127,48 +6278,6 @@
         "path": "frontend/src/App.jsx:102",
         "route": "/codex/operations",
         "originApp": "transportation-logistics/warehouse-manager"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIParkingManagementPlatform",
-        "path": "client/src/App.js:85",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainReshoringAdvisor",
-        "path": "frontend/src/App.js:220",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AISupplyChainTracker",
-        "path": "client/src/App.js:93",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "hardware-supply-chain",
-        "path": "frontend/src/App.tsx:60",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIMaritimeShippingPortLogistics",
-        "path": "frontend/src/App.jsx:44",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/App.jsx:55",
-        "route": "/codex/operations",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       }
     ]
   },
@@ -6222,17 +6331,17 @@
     "evidence": [
       {
         "kind": "api",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "backend/src/routes/ai.js:115",
-        "route": "/optimize-crews",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
         "sourceProject": "movingCompany",
         "path": "backend/src/routes/ai.js:257",
         "route": "/crew-optimize",
         "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "backend/src/routes/ai.js:115",
+        "route": "/optimize-crews",
+        "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
   },
@@ -6315,10 +6424,10 @@
     ]
   },
   {
-    "name": "Orbit Environments",
+    "name": "Orbit Environments Page",
     "canonicalKey": "environment orbit",
     "aliases": [
-      "Orbit Environments Page"
+      "Orbit Environments"
     ],
     "kinds": [
       "page"
@@ -6337,7 +6446,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:72",
+        "path": "frontend/src/App.tsx:83",
         "route": "orbit-environments",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -6375,21 +6484,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:122",
+        "path": "backend/src/routes/ai.js:123",
         "route": "/orbital-decay",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:143",
+        "path": "frontend/src/App.jsx:142",
         "route": "/ai/orbital-decay",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:71",
+        "path": "frontend/src/App.jsx:70",
         "route": "/ai/orbital-decay",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -6432,14 +6541,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:147",
+        "path": "frontend/src/App.jsx:146",
         "route": "/orbital-map",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:76",
+        "path": "frontend/src/App.jsx:75",
         "route": "/orbital-map",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -6532,7 +6641,7 @@
   },
   {
     "name": "Parts Availability",
-    "canonicalKey": "availability parts",
+    "canonicalKey": "availability part",
     "aliases": [],
     "kinds": [
       "api"
@@ -6557,44 +6666,8 @@
     ]
   },
   {
-    "name": "Parts Lookup",
-    "canonicalKey": "lookup part",
-    "aliases": [
-      "Lookup Parts"
-    ],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/lookup-parts",
-      "/parts-lookup"
-    ],
-    "sourceProjects": [
-      "AIAutoBodyCollisionEstimator"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/space-debris-tracker"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/routes/ai.js:393",
-        "route": "/lookup-parts",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/routes/ai.js:104",
-        "route": "/parts-lookup",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      }
-    ]
-  },
-  {
     "name": "Parts Pricing",
-    "canonicalKey": "parts pricing",
+    "canonicalKey": "part pricing",
     "aliases": [
       "Parts Pricing Detail",
       "Parts Pricing Page"
@@ -6791,7 +6864,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:53",
+        "path": "backend/routes/ai.js:69",
         "route": "/performance-prediction",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -6846,6 +6919,20 @@
     ],
     "evidence": [
       {
+        "kind": "api",
+        "sourceProject": "movingCompany",
+        "path": "backend/src/routes/claims.js:239",
+        "route": "/:id/photos",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "movingCompany",
+        "path": "backend/src/routes/surveys.js:166",
+        "route": "/:id/photos",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
         "kind": "page",
         "sourceProject": "AIAutoBodyCollisionEstimator",
         "path": "frontend/src/App.jsx:147",
@@ -6872,20 +6959,6 @@
         "path": "frontend/src/pages/Photos.jsx",
         "route": "/Photos",
         "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "movingCompany",
-        "path": "backend/src/routes/claims.js:239",
-        "route": "/:id/photos",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "movingCompany",
-        "path": "backend/src/routes/surveys.js:166",
-        "route": "/:id/photos",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       }
     ]
   },
@@ -7014,41 +7087,6 @@
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
       },
       {
-        "kind": "api",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "backend/src/routes/ai.js:844",
-        "route": "/predictive-maintenance",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/App.js:103",
-        "route": "/ai/predictive-maintenance",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/components/Navbar.js:40",
-        "route": "/ai/predictive-maintenance",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:46",
-        "route": "/ai/predictive-maintenance",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/PredictiveMaintenance.js",
-        "route": "/PredictiveMaintenance",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
         "kind": "page",
         "sourceProject": "AIAnalyzetelematics",
         "path": "frontend/src/App.js:80",
@@ -7075,6 +7113,41 @@
         "path": "backend/routes/ai.js:92",
         "route": "/predictive-maintenance",
         "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "backend/src/routes/ai.js:844",
+        "route": "/predictive-maintenance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/App.js:103",
+        "route": "/ai/predictive-maintenance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/components/Navbar.js:40",
+        "route": "/ai/predictive-maintenance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/Dashboard.js:45",
+        "route": "/ai/predictive-maintenance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/PredictiveMaintenance.js",
+        "route": "/PredictiveMaintenance",
+        "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
@@ -7145,6 +7218,42 @@
     ]
   },
   {
+    "name": "Quality Lots Page",
+    "canonicalKey": "lots quality",
+    "aliases": [
+      "Quality Lots"
+    ],
+    "kinds": [
+      "page"
+    ],
+    "routes": [
+      "/QualityLotsPage",
+      "quality-lots"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/App.tsx:93",
+        "route": "quality-lots",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/pages/QualityLotsPage.tsx",
+        "route": "/QualityLotsPage",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Quality Scorecard",
     "canonicalKey": "quality scorecard",
     "aliases": [],
@@ -7171,10 +7280,10 @@
     ]
   },
   {
-    "name": "Rad Hard Foundries",
+    "name": "Rad Hard Foundries Page",
     "canonicalKey": "foundry hard rad",
     "aliases": [
-      "Rad Hard Foundries Page"
+      "Rad Hard Foundries"
     ],
     "kinds": [
       "page"
@@ -7193,7 +7302,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:75",
+        "path": "frontend/src/App.tsx:86",
         "route": "rad-hard-foundries",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -7207,10 +7316,10 @@
     ]
   },
   {
-    "name": "Rad Test Campaigns",
+    "name": "Rad Test Campaigns Page",
     "canonicalKey": "campaign rad test",
     "aliases": [
-      "Rad Test Campaigns Page"
+      "Rad Test Campaigns"
     ],
     "kinds": [
       "page"
@@ -7229,7 +7338,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:71",
+        "path": "frontend/src/App.tsx:82",
         "route": "rad-test-campaigns",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -7288,8 +7397,44 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:76",
+        "path": "backend/routes/ai.js:92",
         "route": "/radiation-tolerance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Readiness",
+    "canonicalKey": "readiness",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/api/health/readiness",
+      "/integrations/readiness"
+    ],
+    "sourceProjects": [
+      "AIInventoryDroneOps",
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/drone-delivery-last-mile",
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "backend/routes/missionOperations.js:72",
+        "route": "/integrations/readiness",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/server.js:9",
+        "route": "/api/health/readiness",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -7324,6 +7469,41 @@
         "sourceProject": "AIAutoBodyCollisionEstimator",
         "path": "frontend/src/pages/Integrations.jsx:32",
         "route": "/parts/realtime-pricing",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Recommendation",
+    "canonicalKey": "recommendation",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/recommendation"
+    ],
+    "sourceProjects": [
+      "AIAirportAirTrafficOperations",
+      "AIAnalyzetelematics"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/fleet-maintenance-scheduler",
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAnalyzetelematics",
+        "path": "backend/routes/runtimeAi.js:9",
+        "route": "/recommendation",
+        "originApp": "transportation-logistics/fleet-maintenance-scheduler"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "backend/src/routes/runtimeAi.js:9",
+        "route": "/recommendation",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -7389,7 +7569,7 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:97",
+        "path": "backend/routes/ai.js:113",
         "route": "/redundancy-strategy",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -7415,7 +7595,7 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:370",
+        "path": "backend/src/routes/ai.js:371",
         "route": "/reentry-monitor",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -7441,8 +7621,34 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:324",
+        "path": "backend/src/routes/ai.js:325",
         "route": "/reentry-predict",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Reference",
+    "canonicalKey": "reference",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/reference"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:22",
+        "route": "/reference",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -7483,21 +7689,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:552",
+        "path": "backend/src/routes/ai.js:553",
         "route": "/regulatory-compliance",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:153",
+        "path": "frontend/src/App.jsx:152",
         "route": "/ai/regulatory-compliance",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:81",
+        "path": "frontend/src/App.jsx:80",
         "route": "/ai/regulatory-compliance",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -7530,7 +7736,7 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:618",
+        "path": "backend/src/routes/ai.js:619",
         "route": "/regulatory-compliance-score",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -7587,21 +7793,21 @@
       {
         "kind": "api",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "backend/src/routes/ai.js:511",
+        "path": "backend/src/routes/ai.js:512",
         "route": "/rendezvous-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:152",
+        "path": "frontend/src/App.jsx:151",
         "route": "/ai/rendezvous-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:80",
+        "path": "frontend/src/App.jsx:79",
         "route": "/ai/rendezvous-optimization",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -7691,13 +7897,16 @@
   {
     "name": "Reports",
     "canonicalKey": "report",
-    "aliases": [],
+    "aliases": [
+      "Reports Page"
+    ],
     "kinds": [
       "api",
       "page"
     ],
     "routes": [
       "/Reports",
+      "/ReportsPage",
       "/esg/report",
       "/reports"
     ],
@@ -7713,27 +7922,6 @@
       "transportation-logistics/warehouse-manager"
     ],
     "evidence": [
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:154",
-        "route": "/reports",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/App.jsx:53",
-        "route": "/reports",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "frontend/src/pages/Reports.jsx",
-        "route": "/Reports",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
       {
         "kind": "api",
         "sourceProject": "AIFleetElectrificationPlanner",
@@ -7757,6 +7945,27 @@
       },
       {
         "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:154",
+        "route": "/reports",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/App.jsx:53",
+        "route": "/reports",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "frontend/src/pages/Reports.jsx",
+        "route": "/Reports",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "page",
         "sourceProject": "AISatelliteImageryAnalyzer",
         "path": "frontend/src/App.jsx:139",
         "route": "/reports",
@@ -7767,6 +7976,13 @@
         "sourceProject": "AISatelliteImageryAnalyzer",
         "path": "frontend/src/components/Header.jsx:17",
         "route": "/reports",
+        "originApp": "transportation-logistics/warehouse-manager"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "AISatelliteImageryAnalyzer",
+        "path": "frontend/src/pages/ReportsPage.jsx",
+        "route": "/ReportsPage",
         "originApp": "transportation-logistics/warehouse-manager"
       }
     ]
@@ -7794,7 +8010,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:70",
+        "path": "frontend/src/App.tsx:81",
         "route": "research",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -7927,7 +8143,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:49",
+        "path": "frontend/src/pages/Dashboard.js:48",
         "route": "/ai/runway-simulator",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8034,7 +8250,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:38",
+        "path": "frontend/src/pages/Dashboard.js:37",
         "route": "/runways",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
@@ -8087,14 +8303,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:138",
+        "path": "frontend/src/App.jsx:137",
         "route": "/satellites",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:65",
+        "path": "frontend/src/App.jsx:64",
         "route": "/satellites",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8195,12 +8411,15 @@
   {
     "name": "Settings",
     "canonicalKey": "setting",
-    "aliases": [],
+    "aliases": [
+      "Settings Page"
+    ],
     "kinds": [
       "page"
     ],
     "routes": [
       "/Settings",
+      "/SettingsPage",
       "/settings"
     ],
     "sourceProjects": [
@@ -8229,6 +8448,20 @@
         "path": "frontend/src/pages/Settings.js",
         "route": "/Settings",
         "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "movingCompany",
+        "path": "frontend/src/components/Layout.jsx:17",
+        "route": "/settings",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "page",
+        "sourceProject": "movingCompany",
+        "path": "frontend/src/pages/Settings.jsx",
+        "route": "/Settings",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
       },
       {
         "kind": "page",
@@ -8267,24 +8500,10 @@
       },
       {
         "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/App.jsx:80",
-        "route": "/settings",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/components/Layout.jsx:17",
-        "route": "/settings",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
-      },
-      {
-        "kind": "page",
-        "sourceProject": "movingCompany",
-        "path": "frontend/src/pages/Settings.jsx",
-        "route": "/Settings",
-        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+        "sourceProject": "AISatelliteImageryAnalyzer",
+        "path": "frontend/src/pages/SettingsPage.jsx",
+        "route": "/SettingsPage",
+        "originApp": "transportation-logistics/warehouse-manager"
       }
     ]
   },
@@ -8340,7 +8559,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:47",
+        "path": "frontend/src/pages/Dashboard.js:46",
         "route": "/ai/shift-handover",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8376,14 +8595,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:137",
+        "path": "frontend/src/App.jsx:136",
         "route": "/space-objects",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:64",
+        "path": "frontend/src/App.jsx:63",
         "route": "/space-objects",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8506,7 +8725,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:43",
+        "path": "frontend/src/pages/Dashboard.js:42",
         "route": "/statistics",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8598,60 +8817,6 @@
     ]
   },
   {
-    "name": "Submit",
-    "canonicalKey": "submit",
-    "aliases": [],
-    "kinds": [
-      "api"
-    ],
-    "routes": [
-      "/:id/submit",
-      "/parts-wizard/submit",
-      "/requisition/submit",
-      "/submit"
-    ],
-    "sourceProjects": [
-      "AIAerospaceMRO",
-      "AIAutoBodyCollisionEstimator",
-      "hardware-supply-chain"
-    ],
-    "consolidatedFromApps": [
-      "transportation-logistics/space-debris-tracker",
-      "transportation-logistics/supply-chain-tracker",
-      "transportation-logistics/warehouse-manager"
-    ],
-    "evidence": [
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/routes/customViews.js:264",
-        "route": "/parts-wizard/submit",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAutoBodyCollisionEstimator",
-        "path": "backend/routes/supplementApprovalTracker.js:15",
-        "route": "/submit",
-        "originApp": "transportation-logistics/space-debris-tracker"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "AIAerospaceMRO",
-        "path": "backend/routes/customViews.js:391",
-        "route": "/requisition/submit",
-        "originApp": "transportation-logistics/warehouse-manager"
-      },
-      {
-        "kind": "api",
-        "sourceProject": "hardware-supply-chain",
-        "path": "backend/routes/ecn.js:145",
-        "route": "/:id/submit",
-        "originApp": "transportation-logistics/supply-chain-tracker"
-      }
-    ]
-  },
-  {
     "name": "Submit Claim",
     "canonicalKey": "claim submit",
     "aliases": [],
@@ -8686,10 +8851,10 @@
     ]
   },
   {
-    "name": "Subsystem Budgets",
+    "name": "Subsystem Budgets Page",
     "canonicalKey": "budget subsystem",
     "aliases": [
-      "Subsystem Budgets Page"
+      "Subsystem Budgets"
     ],
     "kinds": [
       "page"
@@ -8708,7 +8873,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:74",
+        "path": "frontend/src/App.tsx:85",
         "route": "subsystem-budgets",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8805,7 +8970,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:50",
+        "path": "frontend/src/pages/Dashboard.js:49",
         "route": "/ai/sustainability",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8873,18 +9038,18 @@
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
-        "path": "backend/routes/ai.js:83",
+        "path": "backend/routes/ai.js:99",
         "route": "/telemetry-anomaly",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
   },
   {
-    "name": "Tests",
+    "name": "Tests Page",
     "canonicalKey": "test",
     "aliases": [
       "Test",
-      "Tests Page"
+      "Tests"
     ],
     "kinds": [
       "api",
@@ -8909,6 +9074,13 @@
     "evidence": [
       {
         "kind": "api",
+        "sourceProject": "AISpaceportOps",
+        "path": "backend/routes/webhooks.js:48",
+        "route": "/test",
+        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
+      },
+      {
+        "kind": "api",
         "sourceProject": "AIDroneDeliveryLastMile",
         "path": "backend/routes/webhooks.js:48",
         "route": "/test",
@@ -8922,16 +9094,9 @@
         "originApp": "transportation-logistics/drone-delivery-last-mile"
       },
       {
-        "kind": "api",
-        "sourceProject": "AISpaceportOps",
-        "path": "backend/routes/webhooks.js:48",
-        "route": "/test",
-        "originApp": "transportation-logistics/autonomous-vehicle-simulator"
-      },
-      {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:68",
+        "path": "frontend/src/App.tsx:79",
         "route": "tests",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -8977,14 +9142,14 @@
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:149",
+        "path": "frontend/src/App.jsx:148",
         "route": "/tle-sync",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
       {
         "kind": "page",
         "sourceProject": "AISpaceDebrisTracker",
-        "path": "frontend/src/App.jsx:82",
+        "path": "frontend/src/App.jsx:81",
         "route": "/tle-sync",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -9075,7 +9240,7 @@
       {
         "kind": "page",
         "sourceProject": "AIAirportAirTrafficOperations",
-        "path": "frontend/src/pages/Dashboard.js:52",
+        "path": "frontend/src/pages/Dashboard.js:51",
         "route": "/ai/traffic-forecast",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -9111,7 +9276,7 @@
       {
         "kind": "page",
         "sourceProject": "electronics-in-space",
-        "path": "frontend/src/App.tsx:73",
+        "path": "frontend/src/App.tsx:84",
         "route": "upscreen-lots",
         "originApp": "transportation-logistics/space-debris-tracker"
       },
@@ -9172,6 +9337,67 @@
         "sourceProject": "AIAutoBodyCollisionEstimator",
         "path": "backend/routes/ai.js:232",
         "route": "/vehicle-valuation",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Verify",
+    "canonicalKey": "verify",
+    "aliases": [],
+    "kinds": [
+      "api"
+    ],
+    "routes": [
+      "/:id/verify",
+      "/audit/verify",
+      "/matters/:matterId/audit/verify",
+      "/verify"
+    ],
+    "sourceProjects": [
+      "AIInventoryDroneOps",
+      "electronics-in-space",
+      "movingCompany"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/drone-delivery-last-mile",
+      "transportation-logistics/maritime-shipping-port-logistics",
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIInventoryDroneOps",
+        "path": "backend/routes/scanProofs.js:114",
+        "route": "/:id/verify",
+        "originApp": "transportation-logistics/drone-delivery-last-mile"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "movingCompany",
+        "path": "backend/src/routes/inventory.js:149",
+        "route": "/:id/verify",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "movingCompany",
+        "path": "backend/src/routes/legalDocuments.js:213",
+        "route": "/matters/:matterId/audit/verify",
+        "originApp": "transportation-logistics/maritime-shipping-port-logistics"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/audit.js:3",
+        "route": "/verify",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/quality.js:43",
+        "route": "/audit/verify",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
