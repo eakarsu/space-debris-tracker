@@ -582,11 +582,13 @@
     "canonicalKey": "baggage reconciliation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/BaggageReconciliation",
+      "/ai/baggage-recon",
       "/baggage-reconciliation"
     ],
     "sourceProjects": [
@@ -596,6 +598,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/BaggageReconciliation.js:1",
+        "route": "/ai/baggage-recon",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
@@ -608,6 +617,41 @@
         "sourceProject": "AIAirportAirTrafficOperations",
         "path": "frontend/src/pages/BaggageReconciliation.js",
         "route": "/BaggageReconciliation",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Bom Optimizer",
+    "canonicalKey": "bom optimizer",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai?tool=bom-optimizer",
+      "/bom-optimizer"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:103",
+        "route": "/ai?tool=bom-optimizer",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "electronics-in-space",
+        "path": "backend/routes/ai.js:106",
+        "route": "/bom-optimizer",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -1241,9 +1285,11 @@
     "canonicalKey": "chip recommendation",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai?tool=chip-rec",
       "/chip-recommendation"
     ],
     "sourceProjects": [
@@ -1253,6 +1299,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:22",
+        "route": "/ai?tool=chip-rec",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
@@ -3371,6 +3424,7 @@
     "canonicalKey": "emergency response",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -3386,6 +3440,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/EmergencyResponse.js:1",
+        "route": "/ai/emergency-response",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
@@ -3602,6 +3663,32 @@
         "sourceProject": "electronics-in-space",
         "path": "backend/routes/ai.js:76",
         "route": "/failure-risk",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Failure Risk Assessment",
+    "canonicalKey": "assessment failure risk",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai?tool=fail-risk"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:48",
+        "route": "/ai?tool=fail-risk",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -5359,6 +5446,32 @@
     ]
   },
   {
+    "name": "History Page Limit 20",
+    "canonicalKey": "20 history limit",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai/history"
+    ],
+    "sourceProjects": [
+      "AIAirportAirTrafficOperations"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/AIHistory.js:1",
+        "route": "/ai/history",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Import Tle",
     "canonicalKey": "import tle",
     "aliases": [],
@@ -5389,6 +5502,7 @@
     "canonicalKey": "incident prediction",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -5404,6 +5518,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/IncidentPrediction.js:1",
+        "route": "/ai/incident-prediction",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
@@ -5800,13 +5921,51 @@
     ]
   },
   {
-    "name": "Mission Analysis",
-    "canonicalKey": "analysis mission",
-    "aliases": [],
+    "name": "Match Technician",
+    "canonicalKey": "match technician",
+    "aliases": [
+      "Technician Match"
+    ],
     "kinds": [
       "api"
     ],
     "routes": [
+      "/match-technician",
+      "/technician-match"
+    ],
+    "sourceProjects": [
+      "AIAutoBodyCollisionEstimator"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "api",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "backend/routes/ai.js:628",
+        "route": "/match-technician",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
+      {
+        "kind": "api",
+        "sourceProject": "AIAutoBodyCollisionEstimator",
+        "path": "backend/routes/ai.js:327",
+        "route": "/technician-match",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Mission Analysis",
+    "canonicalKey": "analysis mission",
+    "aliases": [],
+    "kinds": [
+      "ai-page",
+      "api"
+    ],
+    "routes": [
+      "/ai?tool=mission-analysis",
       "/mission-analysis"
     ],
     "sourceProjects": [
@@ -5816,6 +5975,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:61",
+        "route": "/ai?tool=mission-analysis",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
@@ -5873,6 +6039,32 @@
         "sourceProject": "electronics-in-space",
         "path": "backend/routes/ai.js:120",
         "route": "/mission-success",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
+    "name": "Mission Success Likelihood",
+    "canonicalKey": "likelihood mission success",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai?tool=mission-success"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:132",
+        "route": "/ai?tool=mission-success",
         "originApp": "transportation-logistics/space-debris-tracker"
       }
     ]
@@ -6849,9 +7041,11 @@
     "canonicalKey": "performance prediction",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai?tool=perf-pred",
       "/performance-prediction"
     ],
     "sourceProjects": [
@@ -6861,6 +7055,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:35",
+        "route": "/ai?tool=perf-pred",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
@@ -7404,6 +7605,32 @@
     ]
   },
   {
+    "name": "Radiation Tolerance Predictor",
+    "canonicalKey": "predictor radiation tolerance",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai?tool=rad-tolerance"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:74",
+        "route": "/ai?tool=rad-tolerance",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Readiness",
     "canonicalKey": "readiness",
     "aliases": [],
@@ -7554,9 +7781,11 @@
     "canonicalKey": "redundancy strategy",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api"
     ],
     "routes": [
+      "/ai?tool=redundancy",
       "/redundancy-strategy"
     ],
     "sourceProjects": [
@@ -7566,6 +7795,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:117",
+        "route": "/ai?tool=redundancy",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "electronics-in-space",
@@ -8104,6 +8340,7 @@
     "canonicalKey": "runway simulator",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
@@ -8119,6 +8356,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/RunwaySimulator.js:1",
+        "route": "/ai/runway-simulator",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
@@ -9045,6 +9289,32 @@
     ]
   },
   {
+    "name": "Telemetry Anomaly Detector",
+    "canonicalKey": "anomaly detector telemetry",
+    "aliases": [],
+    "kinds": [
+      "ai-page"
+    ],
+    "routes": [
+      "/ai?tool=telemetry-anomaly"
+    ],
+    "sourceProjects": [
+      "electronics-in-space"
+    ],
+    "consolidatedFromApps": [
+      "transportation-logistics/space-debris-tracker"
+    ],
+    "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "electronics-in-space",
+        "path": "frontend/src/components/AICenter.tsx:90",
+        "route": "/ai?tool=telemetry-anomaly",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      }
+    ]
+  },
+  {
     "name": "Tests Page",
     "canonicalKey": "test",
     "aliases": [
@@ -9433,12 +9703,14 @@
     "canonicalKey": "routing weather",
     "aliases": [],
     "kinds": [
+      "ai-page",
       "api",
       "page"
     ],
     "routes": [
       "/WeatherRouting",
       "/ai/weather-routing",
+      "/ai/weather-routing?tool=weather-routing",
       "/weather-routing"
     ],
     "sourceProjects": [
@@ -9448,6 +9720,13 @@
       "transportation-logistics/space-debris-tracker"
     ],
     "evidence": [
+      {
+        "kind": "ai-page",
+        "sourceProject": "AIAirportAirTrafficOperations",
+        "path": "frontend/src/pages/WeatherRouting.js:96",
+        "route": "/ai/weather-routing?tool=weather-routing",
+        "originApp": "transportation-logistics/space-debris-tracker"
+      },
       {
         "kind": "api",
         "sourceProject": "AIAirportAirTrafficOperations",
