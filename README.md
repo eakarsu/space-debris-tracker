@@ -3,7 +3,7 @@
 Industry: **Transportation & Logistics**  
 Specialization: **Space Debris Tracker**
 
-This standalone application consolidates source-backed capabilities into 256 optimized features, including 21 visible data-backed or AI-enabled views. Its public demo SQLite database contains 75 sanitized source rows across 5 imported tables and 120 operational workflow records.
+This standalone application consolidates source-backed capabilities into 256 optimized features, including all 256 source-backed feature views. Its public demo SQLite database contains 75 sanitized source rows across 5 imported tables and 120 operational workflow records.
 
 ## Run locally
 
